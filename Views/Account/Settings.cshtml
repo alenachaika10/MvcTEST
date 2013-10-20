@@ -1,0 +1,29 @@
+﻿@{
+    ViewBag.Title = "Settings";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+        <div class="span10 offset1 sh-folded-corner sh-form-acc-settings">
+            <div class="sh-label-container">
+                <span class="sh-label">Настройки аккаунта</span>
+            </div>
+
+            <form class="form form-settings-left">
+                <label for="name" class="sh-label-settings">Сменить имя</label>
+                <input type="text" placeholder="Текущее имя" name="name" id="name" class="sh-input-settings"><br>
+                <label for="currentPassword" class="sh-label-settings">Сменить пароль</label>
+                <input type="password" placeholder="Текущий пароль" name="currentPassword" class="sh-input-settings" id="currentPassword"><br>
+                <input type="password" placeholder="Новый пароль" class="sh-input-settings" name="newPassword"><br>
+                <input type="password" placeholder="Повторите пароль" class="sh-input-settings" name="newPassword2"><br>
+                <label for="photo" class="sh-label-settings">Сменить фотографию</label>
+                <input type="file" placeholder="Выбрать файл" name="photo" id="photo" class="sh-input-settings sh-input-file"><br>
+                <button class="sh-button-center sh-button">Сохранить</button>
+            </form>
+            
+            <div class="form-settings-right">
+            	<button class="sh-button">Создать группу</button>
+            	<button class="sh-button">Вступить в группу "ЭИ 7-8"</button>
+            </div>
+        </div>
+    </div>

@@ -1,0 +1,39 @@
+.reg_p{
+	margin:0;
+	margin-bottom: -15px;
+	text-align: center!important;
+}
+.reg_t{
+	position: relative;
+	left:-115px;
+	top:-7px;
+	
+}
+.reg_i{
+	position: relative;
+	top:-35px;
+	left:25px;
+}
+.reg_b_add{
+	position: relative;
+	text-align: center!important;
+	margin-top: -35px;
+	margin-bottom: 15px;
+}
+.reg_b_adv{
+	position: relative;
+	text-align: center!important;
+	padding-bottom: 5px;
+
+}
+.sh-button_add {
+	min-width: 90px;
+	margin: 2px;
+	padding: 2px 5px 0px;
+	color: #fff;
+	background: #ff8762;
+	font-size: 9pt;
+	border-radius: 0;
+	border: none;
+	border-bottom: 2px solid #fc7a56;
+}

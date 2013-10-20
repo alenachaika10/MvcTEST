@@ -1,0 +1,100 @@
+﻿@{
+    ViewBag.Title = "Files";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@Scripts.Render("~/content/js/files.js")
+<div class="row">
+	    	<div class="span10 offset1 sh-folded-corner sh-form-files">
+	    		<div class="sh-label-container">
+	    			<span class="sh-label">Файлы: Дискретная математика</span>
+	    		</div>
+	    		
+	    		<form class="form">
+	    			<div class="sh-files-buttons">
+	    				<button class="sh-button">Добавить файл</button>
+	    				<button class="sh-button">Скачать</button>
+	    			</div>
+	    			<br>
+	    			
+	    			
+	    			<table class="table-bordered sh-table-files">
+	    				<thead>
+	    					<tr class="sh-td-files">
+	    						<td>
+	    							<input type="checkbox" id="main">
+	    						</td>
+	    						
+	    						<td>
+	    							Название
+	    						</td>
+	    						
+	    						<td>
+	    							Объем
+	    						</td>
+	    						
+	    						<td>
+	    							Дата загрузки
+	    						</td>		
+	    					</tr>
+	    				</thead>
+	    				
+	    				<tbody>
+	    					<tr class="sh-td-files">
+	    						<td>
+	    							<input type="checkbox" class="element">
+	    						</td>
+	    						
+	    						<td>
+	    							Лаб 1
+	    						</td>
+	    						
+	    						<td>
+	    							40 кБ
+	    						</td>
+	    						
+	    						<td>
+	    							15.10.2012
+	    						</td>	
+	    					</tr>
+	    					
+	    					<tr class="sh-td-files">
+	    						<td>
+	    							<input type="checkbox" class="element">
+	    						</td>
+	    						
+	    						<td>
+	    							Лекция 3
+	    						</td>
+	    						
+	    						<td>
+	    							10 кБ
+	    						</td>
+	    						
+	    						<td>
+	    							14.10.2012
+	    						</td>	
+	    					</tr>
+	    					
+	    					<tr class="sh-td-files">
+	    						<td>
+	    							<input type="checkbox" class="element">
+	    						</td>
+	    						
+	    						<td>
+	    							А теперь предпложим, что название длинное, что же произойдет в таком случае? Браузер может растягивать таблицу, а может -- перенести на новую строку, что предпочтительнее
+	    						</td>
+	    						
+	    						<td>
+	    							10 кБ
+	    						</td>
+	    						
+	    						<td>
+	    							14.10.2012
+	    						</td>	
+	    					</tr>
+	    				</tbody>
+	    			</table>
+	    			
+	    		</form>
+	    	</div>
+    	</div>

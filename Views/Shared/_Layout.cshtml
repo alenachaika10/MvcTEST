@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Student Helper</title>
+    @Styles.Render("http://fonts.googleapis.com/css?family=Roboto&subset=latin,cyrillic-ext")
+    @Scripts.Render("http://code.jquery.com/jquery-2.0.3.min.js")
+    @Scripts.Render("~/Content/js/bootstrap.min.js")
+    @Scripts.Render("~/Content/js/nav.js")
+
+
+    @Styles.Render("~/Content/css/bootstrap.min.css")
+    @Styles.Render("~/Content/css/sh.css")
+    @Styles.Render("~/Content/fonts/stylesheet.css")
+
+</head>
+<body>
+    <div class="container">
+        <div class="navbar navbar-inverse">
+            <div class="navbar-inner">
+                <div class="text-center sh-logo">
+                    @Html.ActionLink("Student Helper", "Index", "Home") 
+                </div>
+
+                <form class="form-search sh-form">
+                    <input type="text" placeholder="Поиск..." class="search">
+                    <button type="submit" class="btn sh-btn"><i class="icon-white icon-search"></i></button>
+                    <button type="button" class="btn sh-btn settings"><i class="icon-white icon-cog"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="sh-image span2"></div>
+            
+        </div>
+        @RenderBody()
+        <div class="navbar navbar-inverse">
+            <div class="navbar-inner footer">
+                <div class="text-center">2013</div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+﻿@{
+    ViewBag.Title = "new-group";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@Scripts.Render("~/Content/js/newGroup.js")
+
+<div class="row">
+    <div class="span6 offset3 sh-folded-corner sh-form-new-group">
+        <div class="sh-label-container sh-label-reg">
+            <span class="sh-label">Новая группа</span>
+        </div>
+
+        <form class="form sh-new-group">
+            <input type="text" placeholder="Название группы" name="groupName"><br>
+
+            <select id="faculty">
+                <option>Факультет</option>
+                <option>2</option>
+            </select>
+
+            <select>
+                <option>Направление подготовки</option>
+                <option>2</option>
+                <option>3</option>
+            </select>
+
+            <select>
+                <option>Курс</option>
+                <option>2</option>
+                <option>3</option>
+            </select>
+
+            <select>
+                <option>Группа</option>
+                <option>2</option>
+                <option>3</option>
+            </select>
+
+
+
+            <br>
+            <button class="sh-button">Создать</button>
+        </form>
+    </div>
+</div>
