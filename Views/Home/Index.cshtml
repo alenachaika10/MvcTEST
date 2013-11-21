@@ -1,4 +1,20 @@
-﻿<div class="row">
+<script type='text/javascript'>
+
+function sel_iff(iffile,lb)
+{
+   if(document.htm.iffile.checked)
+   {
+  
+lb.style.textDecoration = "line-through";
+
+   }
+   else
+   {
+      lb.style.textDecoration = "none";
+   }
+}
+</script>
+<div class="row">
     <div class="span12 sh-schedule sh-folded-corner">
         <div class="sh-label-container">
             <span class="sh-label">Расписание</span>
@@ -181,7 +197,7 @@
             <span class="sh-label">Учебные материалы</span>
         </div>
         <div class="sh-subject-list">
-            <div class="sh-subject">@Html.ActionLink("Дискретная математика", "Files", "Home")</div>
+           @* <div class="sh-subject">@Html.ActionLink("Дискретная математика", "Files", "Home")</div>*@
             <div class="sh-subject">Физика</div>
             <div class="sh-subject">Химия</div>
             <div class="sh-subject">Геометрия</div>
@@ -206,8 +222,8 @@
         </div>
         <ul class="sh-deadlines-short-list">
             <li>
-                <input type="checkbox" id="235">
-                <label for="235">
+                <input type="checkbox" id="ch235" name="ch235" onclick='sel_iff(ch235,l235)' >
+                <label for="235" id="l235" name="l235">
                     <span>ОПП лаб 3</span>
                     <span>11.09.2001</span>
                 </label>
@@ -215,7 +231,7 @@
 
             <li>
                 <input type="checkbox" id="236">
-                <label for="236">
+                <label for="236" id="l236" name="l236">
                     <span>ОПП лаб 3</span>
                     <span>11.09.2001</span>
                 </label>
@@ -223,7 +239,7 @@
 
             <li>
                 <input type="checkbox" id="237">
-                <label for="237">
+                <label for="237" id="l237" name="l237">
                     <span>ОПП лаб 3</span>
                     <span>11.09.2001</span>
                 </label>
@@ -231,7 +247,7 @@
 
             <li>
                 <input type="checkbox" id="238">
-                <label for="238">
+                <label for="238" id="l238" name="l238">
                     <span>ОПП лаб 3</span>
                     <span>11.09.2001</span>
                 </label>
@@ -239,46 +255,46 @@
 
             <li>
                 <input type="checkbox" id="239">
-                <label for="239">
+                <label for="239" id="l239" name="l239">
                     <span>ОПП лаб 3</span>
                     <span>11.09.2001</span>
                 </label>
             </li>
             <li>
-                <input type="checkbox" id="235">
-                <label for="235">
-                    <span>ОПП лаб 3</span>
-                    <span>11.09.2001</span>
-                </label>
-            </li>
-
-            <li>
-                <input type="checkbox" id="236">
-                <label for="236">
+                <input type="checkbox" id="240">
+                <label for="240" id="l240" name="l240">
                     <span>ОПП лаб 3</span>
                     <span>11.09.2001</span>
                 </label>
             </li>
 
             <li>
-                <input type="checkbox" id="237">
-                <label for="237">
+                <input type="checkbox" id="241">
+                <label for="241" id="l241" name="l241">
                     <span>ОПП лаб 3</span>
                     <span>11.09.2001</span>
                 </label>
             </li>
 
             <li>
-                <input type="checkbox" id="238">
-                <label for="238">
+                <input type="checkbox" id="242">
+                <label for="242" id="l242" name="l242">
                     <span>ОПП лаб 3</span>
                     <span>11.09.2001</span>
                 </label>
             </li>
 
             <li>
-                <input type="checkbox" id="239">
-                <label for="239">
+                <input type="checkbox" id="243">
+                <label for="243" id="l243" name="l243">
+                    <span>ОПП лаб 3</span>
+                    <span>11.09.2001</span>
+                </label>
+            </li>
+
+            <li>
+                <input type="checkbox" id="244">
+                <label for="244" id="l244" name="l244">
                     <span>ОПП лаб 3</span>
                     <span>11.09.2001</span>
                 </label>
